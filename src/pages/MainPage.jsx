@@ -1,7 +1,7 @@
 // import { useContext } from 'react';
 // import { ProfileContext } from '../App';
-import '../App.css';
-import '../easy.css';
+// import '../App.css';
+// import '../easy.css';
 import { Sidebar } from '../components/Sidebar';
 import { Main } from '../components/Main';
 

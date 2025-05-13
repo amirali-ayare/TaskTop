@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import '../app.css';
-import '../easy.css';
 
 export const Navbar = ()=>{
     return(
