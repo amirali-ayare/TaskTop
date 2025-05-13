@@ -1,6 +1,14 @@
 import { useContext, useState } from "react"
 import { ProfileContext } from '../App';
 import { Doughnut } from "react-chartjs-2";
+import {
+    Chart as ChartJS,
+    ArcElement,
+    CategoryScale,
+    LinearScale,
+    Tooltip,
+    Legend
+} from 'chart.js'
 import { unSave, deleteSchedule } from "../redux/Columndata";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
@@ -8,6 +16,8 @@ import bookmark from '../images/bookmark_p.webp';
 import time from '../images/time_p.webp';
 
 export const Sidebar = () => {
+
+    ChartJS.register(ArcElement,CategoryScale,LinearScale, Tooltip,Legend)
 
     const { state, image, saveList, scheduleList, todayTasksNumber,
         todayDoneTasksLength, setFirstDayTasks, setSecondDayTasks, setThirdDayTasks, setFourthDayTasks, setSignedUp
@@ -43,7 +53,7 @@ export const Sidebar = () => {
             <div className="sideitems d-flex column w-100 pr-15 mt-20">
 
                 <Link className="dec-none" to={'/setting'}><div className="sidebtns">
-                    <i class='bx bx-cog'></i>
+                    <i className='bx bx-cog'></i>
                     تنظیمات
                 </div></Link>
 
@@ -55,7 +65,7 @@ export const Sidebar = () => {
 
 
                 <div onClick={logout} className="sidebtns" style={{ color: 'rgb(255, 0, 0)' }}>
-                    <i class='bx bx-log-out'></i>
+                    <i className='bx bx-log-out'></i>
                     خروج از اکانت
                 </div>
 

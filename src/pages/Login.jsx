@@ -8,7 +8,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export const Login = () => {
 
-    const { state, dispatch, signedUp,setSignedUp } = useContext(ProfileContext);
+    const { state ,setSignedUp } = useContext(ProfileContext);
 
     const navigate = useNavigate();
 
@@ -26,7 +26,7 @@ export const Login = () => {
         setFunc(e.target.value)
     }
 
-    const onFormSubmit = (data) => {
+    const onFormSubmit = () => {
         if(loginEmail===state.email && loginPassword===state.password) {
             navigate('/')
             setSignedUp(true)

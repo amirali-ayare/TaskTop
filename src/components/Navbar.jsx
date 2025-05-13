@@ -11,8 +11,8 @@ export const Navbar = ()=>{
             <h2 className='purple fw-800'>تسک تاپ</h2>
 
             <div className='d-flex ai-center relative'>
-                <Link className='dec-none' to={'/notif'}><button className='navbar-btn ml-10'><i class='bx bx-bell'></i></button></Link>
-                <Link className='dec-none' to={'/help'}><button className='navbar-btn'><i class='bx bx-question-mark'></i></button></Link>
+                <Link className='dec-none' to={'/notif'}><button className='navbar-btn ml-10'><i className='bx bx-bell'></i></button></Link>
+                <Link className='dec-none' to={'/help'}><button className='navbar-btn'><i className='bx bx-question-mark'></i></button></Link>
             </div>
         </div>
     )

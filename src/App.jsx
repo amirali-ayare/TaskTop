@@ -1,9 +1,9 @@
 import './App.css'
 import React, { createContext, useReducer } from 'react';
 import {
-  BrowserRouter, Routes, Route, Link
+  Routes, Route
 } from 'react-router-dom';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import user from './images/user1.jpg';
 import { Mainpage } from './pages/MainPage';
 import { Signup } from './pages/Signup';
