@@ -9,7 +9,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 export const Signup = () => {
-    const { state, dispatch } = useContext(ProfileContext);
+    const { dispatch } = useContext(ProfileContext);
 
     const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ export const Signup = () => {
     const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema)})
 
 
-    const onFormSubmit = (data) => {
+    const onFormSubmit = () => {
         navigate('/personalinfo')
     }
     const handleInputChange = (event) => {

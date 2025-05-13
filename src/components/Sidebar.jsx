@@ -1,7 +1,5 @@
 import { useContext, useState } from "react"
 import { ProfileContext } from '../App';
-import { Chart as ChartJS } from "chart.js/auto";
-import { Chart, ArcElement } from 'chart.js'
 import { Doughnut } from "react-chartjs-2";
 import { unSave, deleteSchedule } from "../redux/Columndata";
 import { useDispatch } from "react-redux";
@@ -11,8 +9,8 @@ import time from '../images/time_p.webp';
 
 export const Sidebar = () => {
 
-    const { state, image, setImage, saveList, scheduleList, todayTasksNumber,
-        todayDoneTasksLength, setFirstDayTasks, setSecondDayTasks, setThirdDayTasks, setFourthDayTasks, signedUp, setSignedUp
+    const { state, image, saveList, scheduleList, todayTasksNumber,
+        todayDoneTasksLength, setFirstDayTasks, setSecondDayTasks, setThirdDayTasks, setFourthDayTasks, setSignedUp
     } = useContext(ProfileContext)
 
     const [choosenBtn, setChoosenBtn] = useState('analyse');

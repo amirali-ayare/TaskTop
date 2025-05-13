@@ -12,12 +12,10 @@ import { Link } from "react-router-dom";
 
 export const Tasks = () => {
 
-    const { saveList, setSaveList, scheduleList, setScheduleList,
+    const { setSaveList, setScheduleList,
         firstDayTasks, setFirstDayTasks, secondDayTasks, setSecondDayTasks,
-        thirdDayTasks, setThirdDayTasks, fourthDayTasks, setFourthDayTasks, todayTasksNumber,
-        tommorowTasksNumber, thirdTasksNumber, fourthTasksNumber, todayDoneTasksLength,
-        tommorowDoneTasksLength, thirdDayDoneTasksLength, fourthDayDoneTasksLength,
-        signedUp, setSignedUp
+        thirdDayTasks, setThirdDayTasks, fourthDayTasks, setFourthDayTasks,
+        signedUp
     } = useContext(ProfileContext)
 
 

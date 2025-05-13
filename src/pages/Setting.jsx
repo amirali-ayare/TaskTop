@@ -25,7 +25,7 @@ export const Setting = () => {
     
     const navigate = useNavigate();
 
-    const onFormSubmit = (data) => {
+    const onFormSubmit = () => {
         navigate('/')
     }
     const handleInputChange = (event) => {

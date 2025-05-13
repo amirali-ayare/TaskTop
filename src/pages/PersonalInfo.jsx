@@ -3,14 +3,14 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useContext } from 'react';
 import { ProfileContext } from '../App';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import user from '../images/user1.jpg';
 import RingLoader from "react-spinners/RingLoader";
 import { useState } from 'react';
 import blackprofile from '../images/blackprofile.jpg';
 
 export const PersonalInfo = () => {
-    const { state, dispatch, image, setImage, signedUp , setSignedUp } = useContext(ProfileContext);
+    const { state, dispatch, image, setImage , setSignedUp } = useContext(ProfileContext);
     let [loading, setLoading] = useState(false);
 
     const navigate = useNavigate();
@@ -34,7 +34,7 @@ export const PersonalInfo = () => {
     const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema) })
 
 
-    const onFormSubmit = (data) => {
+    const onFormSubmit = () => {
         setSignedUp(true)
         navigate('/')
     }

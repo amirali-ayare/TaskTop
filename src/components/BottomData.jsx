@@ -1,6 +1,4 @@
-import { Chart as ChartJS } from "chart.js/auto";
-import { Chart, ArcElement } from 'chart.js'
-import { Bar, Line } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import moment from 'moment-jalaali';
 import { useContext, useState } from "react";
 import { ProfileContext } from "../App";
